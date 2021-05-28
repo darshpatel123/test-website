@@ -1,0 +1,100 @@
+<html>
+    <head><title> Just a test </title></head>
+    <body> Calculator  <BR> <input id="n1"> 
+    <br>
+    <input id="n2">
+    
+    <br>
+
+    <button onclick="multiply()" class="button">✖</button>
+    <button onclick="divide()" class="button">➗</button>
+    <button onclick="minus()" class="button">➖</button>
+    <button onclick="add()" class="button">➕</button>
+    <br>
+    <h1 id="ans"></h1>
+    <h1 id="answer"></h1>
+    <br>
+    <input oninput="test()" id="Creeper">
+    <p id="p1"></p>
+    <br>
+    <h1>Cps checker</h1>
+    <p id="cps"></p>
+    <br>
+    <button onclick="click()" id="button" class="button">Click</button>
+    <style>
+        #button {
+      margin: 0;
+      background-color: azure;
+      color:black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: bold;
+      font-size: large;
+        }
+    </style>
+    <script>
+    function multiply() {
+    var num1 = number=document.getElementById("n1").value;
+    var num2 = number=document.getElementById("n2").value;
+    var numf = num1 * num2;
+    console.log(numf);
+    document.getElementById("ans").innerHTML = numf;
+    document.getElementById("answer").innerHTML = "answer of multiplication";
+    }
+
+
+    function test()  {
+
+        var test=number=document.getElementById("Creeper").value;
+        document.getElementById("p1").innerHTML = test;
+        console.log(test);
+
+
+    }
+    function add() {
+    
+   
+    var numf =  Number(document.getElementById("n1").value) +Number(document.getElementById("n2").value);
+    console.log(numf);
+    document.getElementById("ans").innerHTML = numf;
+    document.getElementById("answer").innerHTML = "answer of addition";
+    }
+
+
+    function divide() {
+    
+   
+    var numf =  Number(document.getElementById("n1").value) /Number(document.getElementById("n2").value);
+    
+    
+    console.log(numf);
+    document.getElementById("ans").innerHTML = numf;
+    document.getElementById("answer").innerHTML = "answer of divide";
+
+    }
+
+
+    function minus() {
+    
+   
+    var numf =  Number(document.getElementById("n1").value) -Number(document.getElementById("n2").value);
+    console.log(numf);
+    document.getElementById("ans").innerHTML = numf;
+    document.getElementById("answer").innerHTML = "answer of subtracting";
+    
+
+
+    }
+    function click() {
+        var score = 0;
+        score = score + 1;
+        document.getElementById("cps").innerHTML = score;
+
+    }
+
+
+
+    </script>
+    
+    </body>
+        
+</html>
