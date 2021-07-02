@@ -1,3 +1,7 @@
+body{
+  background-color:wheat;
+  scroll-behavior: smooth;
+}
 #button {
     margin: 0;
     background-color: azure;
@@ -6,3 +10,33 @@
     font-weight: bold;
     font-size: large;
       }
+      a{
+       text-decoration: none;
+       color: black;
+      }
+      #button_web{
+        opacity: 0.5;
+       background-color: green;
+       color: white;
+       height: 50px;
+       width:auto;
+       font-size: large;
+       text-decoration: none;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      #button_web:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+      .name{
+        font-variant: small-caps;
+        font-style: inherit;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,cursive;
+      }
+   .textarea{
+     margin-top: 50;
+     background-color: black;
+     font-size: 20px;
+     color:white;
+     
+   }
